@@ -1,0 +1,75 @@
+<div class="container">
+    
+
+    <div class="row">
+        <div class="col-12 my-3">
+            <h3>Consultas</h3>
+        </div>
+    </div>
+
+    <div class="row table-user">
+        <table class="table table-hover my-3">
+            <thead>
+                <tr>
+                    <th scope="col">fecha_dev</th>
+                    <th scope="col">fecha_pres</th>
+                    <th scope="col">UsuarioId</th>
+                    <th scope="col">EjemplarId</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let e of con1" class="table-light">
+                    <td> {{ e.fecha_dev}}</td>
+                    <td> {{ e.fecha_pres}}</td>
+                    <td> {{ e.UsuarioId}}</td>
+                    <td> {{ e.EjemplarId}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="row table-user">
+        <table class="table table-hover my-3">
+            <thead>
+                <tr>
+                    <th scope="col">CantidadLibros</th>
+                    <th scope="col">fecha_dev</th>
+                    <th scope="col">fecha_pres</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let e of con2" class="table-light">
+                    <td> {{ e.CantidadLibros}}</td>
+                    <td> {{ e.fecha_dev}}</td>
+                    <td> {{ e.fecha_pres}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="row table-user">
+        <table class="table table-hover my-3">
+            <thead>
+                <tr>
+                    <th scope="col">CantidadLibros</th>
+                    <th scope="col">UsuarioId</th>
+                    <th scope="col">fecha_dev</th>
+                    <th scope="col">fecha_pres</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let e of con3" class="table-light">
+                    <td> {{ e.CantidadLibros}}</td>
+                    <td> {{ e.UsuarioId}}</td>
+                    <td> {{ e.fecha_dev}}</td>
+                    <td> {{ e.fecha_pres}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

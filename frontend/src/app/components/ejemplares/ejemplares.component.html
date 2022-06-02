@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12 my-3">
+            <h3>Lista de ejemplares</h3>
+            <a routerLink="/createEjemplar"><button class="btn btn-success my-3">Agregar</button></a>
+        </div>
+    </div>
+    <div class="row table-user">
+        <table class="table table-hover my-3">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">LibroId</th>
+                    <th scope="col">Localizacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let ejemplar of ejemplares" class="table-light">
+                    <td> {{ ejemplar.id}}</td>
+                    <td> {{ ejemplar.Libro.titulo}}</td>
+                    <td> {{ ejemplar.localizacion}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
